@@ -1,9 +1,9 @@
 let datos = []
-    if (localStorage.getItem('producto') == null) {
-        localStorage.setItem('producto', JSON.stringify(datos))
+    if (localStorage.getItem('productos') == null) {
+        localStorage.setItem('productos', JSON.stringify(datos))
         datos = [...datos]
     } else {
-        datos = JSON.parse(localStorage.getItem('producto'))
+        datos = JSON.parse(localStorage.getItem('productos'))
     }
 
 /* if(localStorage.getItem('dato') !== undefined && localStorage.getItem('dato')){
@@ -17,7 +17,7 @@ let datos = []
 datos.forEach(element => {
     tbody.innerHTML +=`
     <tr>
-        <td>${datos.producto}</td>
-        <td>${datos.precio}</td>
+        <td>${element.producto}</td>
+        <td>${element.precio}</td>
     </tr>`
 });

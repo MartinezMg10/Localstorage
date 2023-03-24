@@ -24,6 +24,8 @@ agregar.addEventListener('click',()=>{
     }else{
         alert("Faltan Campos")
     }
+
+    location.href='localStorage.html'
 })
 
 
