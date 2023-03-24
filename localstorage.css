@@ -19,7 +19,10 @@ header{
 .container{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: max-content;
+    gap: 4vh 0;
 }
 .tabla{
     border-collapse: collapse;
@@ -41,4 +44,30 @@ header{
 }
 .tbody tr{
     height: 5vh;
+}
+.botones{
+   display: flex;
+   gap: 5%;
+}
+#eliminar{
+    background-color: rgba(214, 66, 66, 0.692);
+    border: none;
+    cursor: pointer;
+    padding: 2%;
+    width: 50%;
+   color: aliceblue;
+   border-radius: 15px;
+
+}
+#agregar{
+    background-color: rgb(57, 177, 57);
+    border: none;
+    cursor: pointer;
+    padding: 2%;
+    width: 50%;
+   color: aliceblue;
+   border-radius: 15px;
+
+
+
 }

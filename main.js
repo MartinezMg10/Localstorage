@@ -21,11 +21,12 @@ agregar.addEventListener('click',()=>{
 
         producto.value=''
         precio.value=''
+        location.href='localStorage.html'
     }else{
         alert("Faltan Campos")
     }
 
-    location.href='localStorage.html'
+    
 })
 
 

@@ -1,3 +1,5 @@
+const agregar = document.getElementById('agregar').addEventListener('click', ()=> location.href = 'index.html')
+const eliminar = document.getElementById('eliminar').addEventListener('click', ()=> {localStorage.clear();location.reload()})
 let datos = []
     if (localStorage.getItem('productos') == null) {
         localStorage.setItem('productos', JSON.stringify(datos))
@@ -18,6 +20,6 @@ datos.forEach(element => {
     tbody.innerHTML +=`
     <tr>
         <td>${element.producto}</td>
-        <td>${element.precio}</td>
+        <td>$${element.precio}</td>
     </tr>`
 });
