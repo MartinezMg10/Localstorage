@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100vh;
+}
+header{
+    height: 15vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: max-content;
+}
+.tabla{
+    border-collapse: collapse;
+    width: 30%;
+    text-align: center;
+    
+}
+.tabla thead{
+    background-color: #0066FF;
+    color: aliceblue;
+}
+.tabla thead tr{
+    height: 5vh;
+}
+#tbody{
+    color: #606060;
+    border-collapse: collapse;
+    border: solid 1px #60606052;
+}
+.tbody tr{
+    height: 5vh;
+}
