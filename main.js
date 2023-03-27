@@ -26,7 +26,6 @@ agregar.addEventListener('click',()=>{
         alert("Faltan Campos")
     }
 
-    
 })
 
 
@@ -34,9 +33,13 @@ agregar.addEventListener('click',()=>{
 window.addEventListener("load", ()=> {
     const traerProductos = JSON.parse(localStorage.getItem("productos"));
 
-    traerProductos.forEach(element => {
-        let producto = new Producto(element.producto,element.precio)
-        array.push(producto)
-        console.log(traerProductos)
-    } )
+    if(traerProductos != null){
+        traerProductos.forEach(element => {
+            let producto = new Producto(element.producto,element.precio)
+            array.push(producto)
+            console.log(traerProductos)
+        } )
+    }else{
+        console.log("No hay productos guardados")
+    }
 });
